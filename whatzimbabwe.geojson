@@ -26,6 +26,7 @@
         ]
       },
       "properties": {
+        "marker-color": "red"    
         "marker-symbol": "bar",
         "name": "Blackfin",
         "address": "1620 I St NW"
