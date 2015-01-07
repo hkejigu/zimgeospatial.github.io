@@ -18,7 +18,7 @@
 
   <header>
     <h1>Zimbabwe GeoSpatial Data</h1>
-    <p>A collaborative collation of geospatial data on Zimbabwe. </p>
+    <p>A collaborative collation of geospatial data of Zimbabwe. </p>
   </header>
 
   <div id="banner">
@@ -29,7 +29,7 @@
       <div class="downloads">
         <span>QUICK LINKS:</span>
         <ul>
-          <li><a href="https://github.com/erickndava/zimap.html" class="button">Searcheable Map</a></li>
+          <li><a href="http://zimgeospatial.github.io/kwedu/" class="button">Searcheable Map</a></li>
          </ul>
       </div>
     </div>
@@ -43,7 +43,7 @@
     <section>
     
     <h2>Welcome</h2>
-      <p>Geospatial data on Zimbabwe is pretty scattered all over the web and efforts by the national data custodians to implement distribution infrastructure/ initiatives are minimal if existent.  One usually finds this data embedded in pdfs, spreadsheets or images. Making any use of the same requires converting to the appropriate format of which time one may not have.Additionally there is lack of contextual exposure of data resulting in stifled innovative use of such. Try finding <i>Murerekwa Primary School</i> for instance on an online map..[now that you're back, from GeoNames, if you tried hard enough), read on!</p>
+      <p>Geospatial data on Zimbabwe is largely scattered all over the web and efforts by the national data custodians to implement distribution infrastructure/ initiatives are minimal if existent.  One usually finds this data embedded in pdfs, spreadsheets or images. Making any use of the same requires converting to the appropriate format of which time one may not have.Additionally there is lack of contextual exposure of data resulting in stifled innovative use of this data. Try finding <i>Murerekwa Primary School</i> for instance on an online map..[now that you're back, from GeoNames or <a href="http://openstreetmap.org">OpenStreetMap</a>, if you tried hard enough), now, read on!</p>
       
       <h2>Which Zimbabwe?</h2>
       
@@ -64,16 +64,32 @@
 
       <h2>Repository Structure</h2>
 
-      <p>Each repository contains a set of files which are intended to serve varying purposes. The list below gives an insight into each file's contents and what purpose each file serves.</p>
+      <p>Each repository contains a set of files which are intended to serve varying purposes. The list below gives an insight into each file's contents and what purpose each file serves. Notice that there are similar file names but different <strong>file extensions</strong>.</p>
 
       
       <ul>
-        <li><code>README.md</code> :: Contains the metadata about the repository. To be used for checking on data currency and attribution.</li>
+        <li><code>README.md</code> :: Contains the <strong>metadata about the repository</strong>. To be used for checking on data currency and attribution.</li><br> </br>
         
-        <li><code>filename.geojson</code> :: Is the spatial data. To be used for previewing the data and for manipulation with tools such as <a href="http://geojson.io"> GeoJson.io</a> - a quick, simple tool for creating, viewing, and sharing maps and <a href="http://gitspatial.com">GitSpatial</a> -  a spatial API that fronts and syncs your GeoJSON hosted by GitHub. The popular <a href="http://www.qgis.org/en/site">QGIS</a> can also be used to further exploit the data.</li>
-        
+        <li><code>filename.geojson</code> :: <strong>For geographic view of data </strong>:: Is the spatial data. To be used for previewing the data within the github repository and for manipulation with tools such as <a href="http://geojson.io"> GeoJson.io</a> - a quick, simple tool for creating, viewing, and sharing maps and <a href="http://gitspatial.com">GitSpatial</a> -  a spatial API that fronts and syncs GeoJSON hosted by GitHub. The popular <a href="http://www.qgis.org/en/site">QGIS</a> can also be used to further exploit the data.</li><br> </br>
+  
+        <li><code>filename.zip</code> :: <strong>For data manipulation in GIS software</strong>:: This is the spatial data in zipped (compressed) ESRI shapefile. The shapefile is supported natively by many GIS softwares. <a href="http://www.qgis.org/en/site">QGIS</a> can even open zip file for viewing purposes without the need to decompress its contents first.</li> <br> </br>    
+
+        <li><code>filename.csv</code> :: <strong>For tabular view of data</strong>:: This format is useful for searching using the <a href="https://help.github.com/articles/rendering-csv-and-tsv-data/" target="_blank">GitHub CSV and TSV search functionality</a> say you just want to find out if an entry you are interested in exists in the dataset.</li>
       </ul>
 
+    <h2>Peruse The Data</h2>
+    <ul>
+      <li>
+        <h3>1. The Catalog</h3>
+
+        <p>If you want to quickly peruse the entire dataset collated for this project visit <a href="https://github.com/zimgeospatial/reference/blob/master/zimgeospatial_data_catalog.csv" target="_blank">The Searcheable Data Catalog</a> </p>
+      </li>
+      <li>
+       <h3>2. The Map</h3>
+
+      <p>Kwedu is a map product that uses data hosted on this project's data repositories. From there you can search for place names, schools, hospitals and other such information and the map will zoom to that place to povide contextual information. <a href="http://zimgeospatial.github.io/kwedu/">Access Kwedu</a> </p>
+       </li>
+     </ul> 
       
     <h2>Participating</h2>
 
@@ -93,17 +109,15 @@
 
     <h2>License</h2>
 
-      <p>CC.  </p>
+      <p> This work is licensed under a Creative Commons License unless stated otherwise.  </p>
 
+    <h2>Contact Us</h2>
 
-
-      <h2>Contact </h2>
-
-      <p><a href="http://twitter.com/#!/zimgeospatial">twitter</a> or email (zimgeospatial [at] gmail.com )</p>
+      <p>Via <a href="http://twitter.com/#!/zimgeospatial">twitter</a> or <a href="mailto:zimgeospatial@gmail.com">email</a></p>
       </section>
       
       <footer>
-        <p>Project maintained by <a href="https://github.com/erickndava">erickndava</a></p>
+        <p>Project maintainer <a href="mailto:zimgeospatial@gmail.com">Zimgeospatial Team</a></p>
         <p><span class="small">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span></p>
       </footer>
     </div>
